@@ -1,0 +1,426 @@
+/* Import Inter font using @font-face */
+@font-face {
+    font-family: 'Inter';
+    src: url('inter-regular.woff2') format('woff2'), /* Replace 'inter-regular.woff2' with the correct file name and format */
+         url('inter-regular.woff') format('woff');   /* Replace 'inter-regular.woff' with the correct file name and format */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  /* Global styles */
+  body {
+    font-family: 'Inter', Arial, sans-serif; 
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 50px 0;
+
+    background-color: var(--white, #FCFCFC);
+  }
+  h3{
+    margin: 0;
+  }
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    outline: none;
+  }
+
+
+
+.intro-block{
+    width: 100%;
+    height: 422px;
+    border-radius: 12px;
+
+    background-image: url('public/images/heading.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: end;
+    
+}
+
+/*
+.gradient{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    display: inline;
+    z-index: 1;
+    border-radius: 12px;
+}
+*/
+
+#intro-text{
+    color: var(--white, #FCFCFC);
+    position: relative;
+    margin-left:40px;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+#intro-text h3{
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+    width: 100%;
+}
+#intro-text h1{
+    font-size: 44px;
+    font-weight: 800;
+    margin: 0;
+    line-height: normal;
+    width: 100%;
+}
+
+
+
+/*Book styling*/
+.book-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.book-block-top .book-sect .book-cover{
+    border-radius: 0px 10px 10px 0px;
+    width: 277px;
+    height: 416px;
+    overflow: hidden;    
+}
+
+.read-sample{
+    color: var(--primary-1, #4E46DC);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+
+    justify-content: center;
+    display: flex;
+    padding: 7px 8px;
+    align-items: center;
+    gap: 9px;
+    border-radius: 4px;
+    width: 100%;
+}
+.read-sample:hover {
+    background: rgba(78, 70, 220, 0.20);
+
+}
+
+
+
+#book1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-block-top{
+    display: flex;
+    padding: 27px 38px;
+    gap: 58px;
+    align-self: center;
+
+    height: fit-content;
+    
+    margin: 10px;
+    width: 88%;
+    border-radius: 28px;
+
+    background: var(--background, #F3F4F6);
+}
+
+
+
+.book-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: fit-content;
+}
+
+.author{
+    color: var(--black, #3A3944);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+.section-titles{
+    align-self: stretch;
+    color: var(--black, #3A3944);
+    text-align: center;
+    font-size: 44px;
+    line-height: normal;
+    font-weight: 900;
+}
+
+.book-summary{
+    height: fit-content;
+    color: var(--black, #3A3944);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    height: fit-content;
+}
+
+.buy-now{
+    display: flex;
+    padding: 18px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+
+    border-radius: 12px;
+    background: var(--primary-1, #4E46DC);
+    border-color: none;
+
+
+    color: var(--white, #FCFCFC);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.buy-now .price{
+    color: var(--white, #FCFCFC);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.review{
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+
+    border-radius: 16px;
+    background: var(--white, #FCFCFC);
+
+    color: var(--black, #3A3944);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.review span{
+    color: var(--black, #3A3944);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stars{
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+/*Grid of books*/
+.book-container{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-block{
+    display: flex;
+    padding: 27px 38px;
+    align-items: flex-start;
+    gap: 58px;
+
+    margin:10px;
+    width: 40%;
+    border-radius: 28px;
+}
+
+
+
+
+#book2{
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.book-sect .book-cover{
+    width: 152px;
+    height: 229px;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+}
+.book-cover img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover
+}
+
+
+
+ .book-block .author{
+    color: var(--black, #3A3944);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+  .book-info{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    margin-top: 0px;
+}
+
+  .book-content p{
+    color: var(--black, #3A3944);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+/*Feature*/
+#feature{
+    width: 93%;
+    margin: 0 auto;
+
+    color: var(--white, #FCFCFC);
+
+    height: fit-content;
+    border-radius: 28px;
+    overflow: hidden;
+    background: var(--primary-1, #4E46DC);
+
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.feature-header{
+    height: 259px;
+    width: 100%;
+
+    background: url('public/images/featurecover.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-header span{
+    color: var(--white, #FCFCFC);
+    text-align: center;
+    font-size: 44px;
+    line-height: normal;
+    font-weight: 900;
+
+    width: 80%;
+
+}
+
+#feature .book-block-top{
+    background-color: #4E46DC;
+}
+
+#feature .read-sample{
+    color: var(--white, #FCFCFC);
+}
+
+#feature .book-summary{
+    color: var(--white, #FCFCFC);
+
+}
+
+#feature .buy-now{
+    background: var(--white, #FCFCFC);
+    color: var(--primary-1, #4E46DC);
+}
+#feature .price{
+    color: var(--primary-1, #4E46DC);
+}
+
+#feature .book-sect .book-cover{
+    width: 277px;
+    height: 416px;
+    overflow: hidden;    
+}
+
+#feature .author{
+    color: var(--white, #FCFCFC);
+    opacity: .6;
+}
+
+#feature .review{
+    background: rgba(252, 252, 252, 0.40);
+    color: var(--white, #FCFCFC);
+}
+
+#feature .review span{
+    color: var(--white, #FCFCFC);
+}
+
+.footer{
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+
+    color: var(--primary-3, #3E7FBC);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
