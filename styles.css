@@ -106,7 +106,7 @@
     font-weight: 700;
     line-height: normal;
     
-
+    cursor: pointer;
     justify-content: center;
     display: flex;
     padding: 7px 8px;
@@ -114,6 +114,7 @@
     gap: 9px;
     border-radius: 4px;
     width: 100%;
+    transition: background-color 0.2s ease;
 }
 .read-sample:hover {
     background: rgba(78, 70, 220, 0.20);
@@ -202,12 +203,18 @@
     background: var(--primary-1, #4E46DC);
     border-color: none;
 
-
+    cursor: pointer;
     color: var(--white, #FCFCFC);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: background-color 0.2s ease;
+}
+.buy-now:hover{
+
+    background: #3c35b5;
+
 }
 
 .buy-now .price{
@@ -267,8 +274,14 @@
     margin:10px;
     width: 40%;
     border-radius: 28px;
+
+    background: var(--white, #FCFCFC);
+    transition: background-color 0.2s ease;
 }
 
+.book-block:hover{
+    background-color: #dee0e2;
+}
 
 
 
@@ -375,15 +388,22 @@
 #feature .read-sample{
     color: var(--white, #FCFCFC);
 }
+#feature .read-sample:hover{
+    background-color: #fcfcfc1d;
+}
 
 #feature .book-summary{
     color: var(--white, #FCFCFC);
-
 }
 
 #feature .buy-now{
     background: var(--white, #FCFCFC);
     color: var(--primary-1, #4E46DC);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+#feature .buy-now:hover{
+    background: #e9e7e7;
 }
 #feature .price{
     color: var(--primary-1, #4E46DC);
